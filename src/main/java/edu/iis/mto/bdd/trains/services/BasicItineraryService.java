@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 public class BasicItineraryService implements ItineraryService {
     private TimetableService timetableService;
 
-    public BasicItineraryService(InMemoryTimetableService inMemoryTimetableService) {
-        this.timetableService = inMemoryTimetableService;
+    public BasicItineraryService(TimetableService timetableService) {
+        this.timetableService = timetableService;
     }
 
     @Override public List<LocalTime> findDepartures(String departure, String destination, LocalTime departureTime) {
