@@ -17,9 +17,9 @@ import static org.junit.Assert.assertThat;
 
 public class OptimalItinerarySteps {
 
-    String departureStation;
-    String destinationStation;
-    LocalTime startTime;
+    private String departureStation;
+    private String destinationStation;
+    private LocalTime startTime;
     private ItineraryService itineraryService;
 
     @Zakładając("^pociągi linii \"(.*)\" z \"(.*)\" odjeżdżają ze stacji \"(.*)\" do \"(.*)\" o$")
