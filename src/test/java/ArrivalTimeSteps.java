@@ -6,14 +6,14 @@ import cucumber.api.java.pl.Zakładając;
 
 public class ArrivalTimeSteps {
 
-    @Zakładając("^chcę się dostać z Parramatta do TownHall$")
-    public void chcęSięDostaćZParramattaDoTownHall() throws Throwable {
+    @Zakładając("^chcę się dostać z (.*) do (.*)$")
+    public void chcęSięDostaćZ_A_Do_B(String miasto1, String miasto2) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
-    @I("^następny pociąg odjeżdża o (\\d+):(\\d+) na linii Western$")
-    public void następnyPociągOdjeżdżaONaLiniiWestern(int arg0, int arg1) throws Throwable {
+    @I("^następny pociąg odjeżdża o (\\d+):(\\d+) na linii (.*)$")
+    public void następnyPociągOdjeżdżaONaLiniiWestern(int hh, int mm, String linia) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
@@ -24,7 +24,7 @@ public class ArrivalTimeSteps {
     }
 
     @Wtedy("^powinienem uzyskać następujący szacowany czas przyjazdu: (\\d+):(\\d+)$")
-    public void powinienemUzyskaćNastępującySzacowanyCzasPrzyjazdu(int arg0, int arg1) throws Throwable {
+    public void powinienemUzyskaćNastępującySzacowanyCzasPrzyjazdu(int hh, int mm) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
